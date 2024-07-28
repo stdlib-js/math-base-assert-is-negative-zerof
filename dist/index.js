@@ -1,6 +1,27 @@
-"use strict";var s=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var i=s(function(c,t){
-var u=require('@stdlib/constants-float32-ninf/dist');function a(r){return r===0&&1/r===u}t.exports=a
-});var n=i();module.exports=n;
 /** @license Apache-2.0 */
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Test if a single-precision floating-point numeric value is negative zero.
+*
+* @module @stdlib/math-base-assert-is-negative-zerof
+*
+* @example
+* var isNegativeZerof = require( '@stdlib/math-base-assert-is-negative-zerof' );
+*
+* var bool = isNegativeZerof( -0.0 );
+* // returns true
+*
+* bool = isNegativeZerof( 0.0 );
+* // returns false
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;

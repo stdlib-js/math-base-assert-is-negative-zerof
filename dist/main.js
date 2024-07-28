@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2018 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,25 +16,34 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_MATH_BASE_ASSERT_IS_NEGATIVE_ZEROF_H
-#define STDLIB_MATH_BASE_ASSERT_IS_NEGATIVE_ZEROF_H
+'use strict';
 
-#include <stdbool.h>
+// MODULES //
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+var NINF = require( '@stdlib/constants-float32-ninf' );
+
+
+// MAIN //
 
 /**
 * Tests if a single-precision floating-point numeric value is negative zero.
+*
+* @param {number} x - value to test
+* @returns {boolean} boolean indicating whether the value is negative zero
+*
+* @example
+* var bool = isNegativeZerof( -0.0 );
+* // returns true
+*
+* @example
+* var bool = isNegativeZerof( 0.0 );
+* // returns false
 */
-bool stdlib_base_is_negative_zerof( const float x );
-
-#ifdef __cplusplus
+function isNegativeZerof( x ) {
+	return (x === 0.0 && 1.0/x === NINF);
 }
-#endif
 
-#endif // !STDLIB_MATH_BASE_ASSERT_IS_NEGATIVE_ZEROF_H
+
+// EXPORTS //
+
+module.exports = isNegativeZerof;
