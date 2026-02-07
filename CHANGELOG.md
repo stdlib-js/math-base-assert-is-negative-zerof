@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-30)
+## Unreleased (2026-02-07)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`1eee288`](https://github.com/stdlib-js/stdlib/commit/1eee288269d47dffe3b59766b0bb846089ad2b42) - **bench:** refactor to use string interpolation in `math/base/assert` [(#10133)](https://github.com/stdlib-js/stdlib/pull/10133) _(by Lokesh Ranjan)_
 -   [`65ddf8d`](https://github.com/stdlib-js/stdlib/commit/65ddf8d4d51ccfda52d1c5a06408e43fb386c27e) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`2b6d616`](https://github.com/stdlib-js/stdlib/commit/2b6d61659b1436a6a3c18308e2c56a01e2be89ed) - **bench:** update random value generation [(#6683)](https://github.com/stdlib-js/stdlib/pull/6683) _(by Harsh Yadav)_
@@ -28,10 +29,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Harsh Yadav
+-   Lokesh Ranjan
 -   Philipp Burckhardt
 
 </section>
